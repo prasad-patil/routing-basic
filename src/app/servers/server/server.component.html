@@ -1,0 +1,7 @@
+<h5>{{ server?.name }}</h5>
+<p>Server status is {{ server?.status }}</p>
+<div class="row" *ngIf="allowServerEdit">
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="editServer()">Edit Server</button>
+  </div>
+</div>
